@@ -1,0 +1,64 @@
+
+/* TEXTO */
+
+p {
+    text-align: center;         /* se usa para decir que alineaciont tendra el texto (centrado - alineado izq o der - justificado */
+    text-decoration: overline;  /* se usa para añadirle lineas al texto como subryado o al contrario...etc */
+    text-transform: capitalize; /* se utiliza para cuando quereemos cambiar a minuscula, mayuscula o capitalize */
+    text-indent: 1px;           /* sangria del texto */
+    letter-spacing: normal;     /* espacio entre cada letra */
+    line-height: 1px;           /* espacio entre cada linea de un parrafo */
+    word-spacing: normal;       /* espacio entre cada palabra */
+    white-space: unwrap;        /* este valor especificamente hace qu eel texto siga de largo y habilita scroll */
+
+    text-shadow: 3px         5px          5px             black; /* sombra al texto */
+    /*         derecha      abajo      difuminado          color */
+
+    font-family: 'Times New Roman', Times, serif;    /* fuente del texto */
+    font-size: 20px;    /* tamaño de la fuente */
+}
+
+
+/* ------------------------------------------------------------------------------------------------- */
+
+/* LISTAS */
+
+li {
+    list-style-type: circle;                    /* tipo de iconos en las listas */
+    list-style-position: inside;                /* como se posiciona la lista */
+    list-style-image: url(/css/3\ -\ .css);     /* una iamgen como icono de la lista */
+}
+
+
+/* ------------------------------------------------------------------------------------------------- */
+
+/* POSICIONES */
+
+.posiciones {
+    position: static;       /* viene por defecto */
+    position: relative;     /* en relacion con la posicion original se puede mover */
+    position: absolute;     /* se mueve en relacion con el contenedor padre y no su posicion original */
+    position: fixed;        /* se queda en un lugar fijo relativo a la ventana */
+    position: sticky;       /* es relativa hasta que cruza un lumbral y luego queda similar a "fixed" */
+}
+
+/* ------------------------------------------------------------------------------------------------- */
+
+/* SELECTORES COMBINADOS */
+
+.padre .hijo {              /* solamente los .hijo que esten dentro de .padre se modifican ( incluyen nietos y demas )*/
+    color: blue; 
+}
+
+.padre > .hijo {            /* solamente los .hijo directos de .padre se modifican ( NO incluyen nietos y demas )*/      
+    color: red;
+}
+
+.hermano1 + .hermano2 {     /* solamente el primer .hermano2 de .hermano1 se modifica ( NO hijos ni nietos .... )*/
+    color: green;
+}
+
+.hermano1 ~ .hermano2 {
+    color: yellow;        /* solamente todos los .hermano2 de .hermano1 se modifican ( NO hijos ni nietos .... ) */ 
+}
+

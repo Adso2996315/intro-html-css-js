@@ -1,0 +1,92 @@
+
+/* PSEUDO ELEMENTOS */     /* permiten añadir estilos a una parte concreta del documento. */
+
+
+p::first-letter { color: blue;}     /* selecciona solo la primera letra */
+
+p::first-line { color: blue;}       /* selecciona solo la primera linea */
+
+p::before { color: blue;}           /* selecciona el antes del contenido (izq) */
+
+p::after { color: blue;}            /* selecciona el despues del contenido (der) */
+
+li::marker { color: blue;}          /* selecciona los iconos de las listas */
+
+p::selection { color: blue;}        /* selecciona el cuando se selecciona un texto con mouse (I) */
+
+
+/* ------------------------------------------------------------------------------------------------- */
+
+/* PSEUDO CLASES */     /* Se utiliza una pseudoclase para definir un estado especial de un elemento. */
+
+
+/* Pseudo clases de enlaces -------------*/
+
+a::link { color: red;}              /* selecciona los links que no se han visitado */
+
+a::visited { color: red;}           /* selecciona los links ya visitados */
+
+a::hover { color: red;}             /* se aplica cuando se pasa el mouse por encima */
+
+a::active { color: red;}            /* se aplica en el momento justo que se hace click en el enlace */
+
+a::hover p { display: block;}         /* => asi podemos hacer aparecer un p al hacer hover */
+
+
+/* NOTA el orden por si se utilizan todos las pseudo clases de enlaces es ( link - visited - hover - active ) */
+
+
+
+/* Otras pseudo clases ----------------------------*/
+
+input:required { color: green;}         /* selecciona los input con un required */
+
+input:checked { color: green;}          /* selecciona los input como radio y checkbox */      
+
+input:disabled { color: green;}         /* selecciona un input que esta marcado como deshabilitado*/
+
+input:enabled { color: green;}          /* selecciona solo los input habilitados */
+
+input:focus { color: green;}            /* selecciona al input en el que el mouse esta adentro */
+
+p:first-child { color: green;}          /* selecciona cada elemento que sea el priemr hijo de su padre*/ 
+
+p:first-of-type { color: green;}        /* selecciona cada elemento que sea el primero de ese tipo de su padre */
+
+p:last-child { color: green;}           /* selecciona cada elemento que sea el ultimo hijo de su padre */
+
+p:last-of-type { color: green;}         /* selecciona cada elemento que sea el ultimo de ese tipo de su padre */
+
+body:not(p) { color: green;}            /* selecciona todos los elementos excepto el que esta en parentesis */
+
+p:nth-child(n) { color: green;}         /* selecciona cada elemento que sea el hijo numero (n) tambien puede ser odd o even */
+
+p:nth-last-child(n) { color: green;}    /* selecciona cada elemento que sea el hijo numero (n) empezando a contar desde el ultimo hijo) */
+
+:nth-of-type(n) { color: green;}        /* selecciona cada elemento que sea el tipo numero (n) */
+
+p:nth-last-of-type(n) { color: green;}  /* selecciona cada elemento que sea el tipo numero (n) empezando por el final */
+
+p:only-of-type { color: green;}         /* selecciona el unico hijo de su tipo */
+
+p:only-child { color: green;}           /* selecciona cada elementoq ue sea el unico hijo de su padre */
+
+input:optional { color: green;}         /* selecciona los input que no tengan "required" */
+
+input:read-only { color: green;}        /* selecciona los input que solamente sean de read-only */
+
+input:read-write { color: green;}       /* selecciona los input que no tengan el read-only */
+
+input:read-only { color: green;}  
+
+input:in-range { color: green;}         /* selecciona el input si el valor de este se encuentra en rango (min - max) */
+
+input:out-of-range { color: green;}     /* selecciona el input si el valor de este se encuentra fuera de rango (min - max) */
+
+input:valid { color: green;}            /* selecciona los input con un valor valido por ejemplo en un email */
+
+p:empty { color: green;}                /* selecciona a los elementos que no tienen hijos */
+
+
+
+

@@ -1,0 +1,71 @@
+
+<!-- ETIQUETAS DE FORMULARIO -->
+
+<form action="/link_donde_se_envia" method="POST / GET"></form> <!-- etiqueta principal de un formulario -->
+
+<fieldset></fieldset> <!-- campo del formulario que contiene todo sobre el formulario -->
+
+<label for="coloca_id_de_input">texto</label> <!-- Titulo del input -->
+
+<input type="tipodeinput" id="identificador" name="nombreytipodedato" value="valorpordefecto" placeholder="guia"> <!-- Campo que se rellena -->
+
+<textarea name="nombreytipodedato" id="identificador" cols="30" rows="10" placeholder=""></textarea> <!-- caja para escribir un comentario -->
+
+<select name="nombreytipodedato" id="identificador"></select> <!-- input que deja escoger una opcion -->
+
+<option value="valor_la_opcion" selected ></option> <!-- Opciones del select (selected es la seleccion por defecto)-->
+
+<optgroup></optgroup> <!-- para dividir las opciones en categorias -->
+
+<button type="submit / reset / button"></button> <!-- boton normalmente se usa para enviar los datos o resetear el formulario -->
+
+<!-- mas propiedades de los input -->
+
+<input type="text" maxlength="maximo_caracteres" minlength="minimo_caracteres" max="maximo_numeros" min="minimo_numeros" required>
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- EJEMPLO FORMULARIO -->
+
+<form action="/link" method="post">
+    <fieldset>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="nombre">
+
+        <label for="comentario">Sugerencia ?</label>
+        <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="ingresa tu comentario"></textarea>
+        
+        <button type="submit">Enviar</button>
+    </fieldset>
+</form>
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- TIPOS DE INPUT -->
+
+<input type="text">             <!-- ingresa solo texto -->
+
+<input type="password">         <!-- ingresa una contraseña, la tapa con bolas negras -->
+
+<input type="checkbox">         <!-- casillas para marcar varias opciones al tiempo -->
+
+<input type="radio">            <!-- casilla para marcar solo una opcion -->
+
+<input type="number">           <!-- ingresa solo numeros ,se puede colocar atributos como min y max -->
+
+<input type="email">            <!-- ingresa un email, es requerido el @ -->
+
+<input type="file">             <!-- ingresa un archivo -->
+
+<input type="image">            <!-- ingresa una imagen -->
+
+<input type="url">              <!-- ingresa una url, es requerida una estructura de url correcta -->
+
+<input type="color">            <!-- permite escoger un color en una paleta de colores -->
+
+<input type="range">            <!-- ingresa un rango -->     
+
+<input type="">
+
+
+

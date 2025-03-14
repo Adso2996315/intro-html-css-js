@@ -1,0 +1,96 @@
+
+/* FONDOS */
+
+#fondo {
+
+    background-color: aqua;         /* color de fondo */
+
+    background: linear-gradient(10deg,    blue 30%,    red 70%);    /* fondo con color degradado */
+                            /* grados D   color1  %      color2  % */
+    
+    background-image: url(pepito.png);      /* fondo con una imagen */
+    
+    background-repeat: no-repeat;  /* decidir si se repite la imagen por si es muy pequeña */
+
+    /*  Valores               sintaxis de dos valores: horizontal / vertical                Valores Globales
+
+        repeat-x                            repeat space                                        inherit
+        repeat-y                            repeat repeat                                       initial
+        repeat                              round space                                         revert
+        space                             no-repeat reound                                    revert-layer
+        round                                                                                    unset
+        no-repeat
+    */
+
+    background-position: top;      /* en que posicion especifica saldria la imagen */
+
+    /*  Valores                Valores de porcentajes : horizontal / vertical                lado predefinido
+
+        top                                 25%  75%                                       bottom 20px right 40px
+        bottom                              50%  10%                                        top 40px  left 70px
+        left
+        right
+        center
+    
+    */
+
+    background-attachment: fixed, scroll, local;   /* decidir si el fondo queda fijo o nos sigue...etc */
+
+    background-size: cover, contain, auto;     /* decidir el tamaño de la imagen */
+
+    /* Shorhand */  background: red url(pepito.png) no-repeat top cover;
+}
+
+/* ------------------------------------------------------------------------------------------------- */
+
+/* BOX MODEL */
+
+/* el contenido recubierto de un margen interno (PADDING) luego el borde del elemento y luego un margen exterior */
+
+#box_model {
+    
+    /* Padding ------------------------------*/
+
+    padding: 1px;               /* padding a todos lados */
+    padding: 1px 2px;           /* padding arriba / abajo y izquierda / derecha */
+    padding: 1px 2px 3px;       /* padding arriba luego izquierda / derecha y al final abajo */
+    padding: 1px 2px 3px 4px;   /* padding uno a cada lado (arriba - derecha - abajo - izquierda)*/ 
+
+    padding-top: 1px;           /* padding arriba como propiedad especifica */
+    padding-left: 2px;          /* padding izquierda como propiedad especifica */
+    padding-right: 3px;         /* padding derecha como propiedad especifica */
+    padding-bottom: 4px;        /* padding abajo como propiedad especifica */
+
+    /* Bordes -------------------------------*/
+
+    border: 2px black solid;
+    /*    grosor color  tipo  */
+
+    /* tipos de bordes */
+
+    /* dotted = con puntos // dashed = con guiones // solid = solido // double = dos lineas */
+    /* groove = raro-suave // ridge = 3D simple    //  inset = 3D dentro //outset = 3D afuera*/
+    /* none = vacio        // hidden = oculto      // mix = varios tipos */
+
+    border-style: dashed;    /* tipo de borde como propiedad especifica */
+
+    border-radius: 3px;      /* cuanto redondeado se le da al borde */
+
+    border-color: blue;    /* color del borde como propiedad especifica*/
+
+    border-width: 3px;       /* ancho del borde como propiedad especifica */
+
+    /* Margin ---------------------------------------*/
+
+    margin: 1px;               /* margin a todos lados */
+    margin: 1px 2px;           /* margin arriba / abajo y izquierda / derecha */
+    margin: 1px 2px 3px;       /* margin arriba luego izquierda / derecha y al final abajo */
+    margin: 1px 2px 3px 4px;   /* margin uno a cada lado */
+
+    margin-top: 1px;           /* margin arriba como propiedad especifica */
+    margin-left: 2px;          /* margin izquierda como propiedad especifica */
+    margin-right: 3px;         /* margin derecha como propiedad especifica */
+    margin-bottom: 4px;        /* margin abajo como propiedad especifica */
+    
+}
+

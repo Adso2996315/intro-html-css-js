@@ -1,0 +1,80 @@
+
+/* ANIMACIONES */
+
+@keyframes ejemplo {
+    /* nombre animacion */ 
+    from {background-color: red;}       /* "from" tambien se puede cambiar por 0% */
+    to {background-color: yellow;}      /* "to" tambien se puede cambiar por 100% */
+}
+
+@keyframes example_2 {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+}
+
+@keyframes example_3 {                                    /* esta animacion modifica tanto el fondo como la posicion del div */
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+div {
+    width: 100px;
+    height: 100px;              /* Configuracion normal del elemento*/
+    background-color: red;
+    position: relative;
+
+    animation-name: example;        /* establece que animacion utilizar */
+    animation-duration: 4s;         /* establece cuanto tiempo durara la animacion (es obligatorio usarlo) */
+    animation-delay: 2s;            /* establece cuanto tiempo se demora en iniciar la animacion  (tambien se pueden numeros negativos */
+    animation-iteration-count: 3;   /* establece cuantas veces se repite la animacion antes de detenerse (infinite tambien existe) */
+
+    animation-direction: reverse;   /* indica si debe reporducirse hacia adelante, hacia atras o ciclos alternos */
+    /* valores: 
+
+        normal;             => valor predeterminado, la animacion va para adelante
+        reverse;            => la animacion va al reves
+        alternate;          => la animacion se reproduce hacia adelante y luego para atras
+        alternate-reverse;  => la animacion se reporduce hacia atras y luego para adelante
+    */
+
+    animation-timing-function: linear;  /* especifica la curva de velocidad de la animacion */
+    /* valores: 
+
+        ease;           => inicio lento, luego rapido y finaliza lento (predeterminado)
+        linear;         => tiene la misma velocidad siempre
+        ease-in;        => inicio lento
+        ease-out;       => final lento
+        ease-in-out;    => inicio y final lento
+    */
+
+    animation-fill-mode: forwards;      /* hace que podamos afectar el elemento antes o despues de la animacion */
+    /* valores: 
+    
+        none;       => no aplica ningun estilo ni antes ni despues (predeterminado)
+        forwards;   => conserva los valores de estilo del ultimo fotograma de la animacion
+        backwards;  => conserva los valores de estilo del ultimo fotograma de la animacion y los conservara durante el preiodo de retraso
+        both;       => conserva ambos valores extendiendo las propiedades de la animación en ambas direcciones
+    */
+}
+
+/* ===================== */
+
+/* Forma abreviada */
+
+div {
+    animation-name: example;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+div {
+    animation: example 5s linear 2s infinite alternate;
+}

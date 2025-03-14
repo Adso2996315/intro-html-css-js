@@ -1,0 +1,40 @@
+
+/* FLEXBOX */
+
+/* Contenedor Flex*/
+
+div .flex-container {
+
+  display: flex;                  /* Colocamos flex en el contenedor padre */
+
+  flex-direction: column;         /* sirve para indicar la direccion de los elementos */
+  /* valores: 
+  row (default)
+  column
+  column-reverse
+  row-reverse
+  */
+  
+  flex-wrap: nowrap - wrap;         /* sirve para ver si se ajusta los elementos con el espacio disponible, sino siguen abajo */   
+  flex-flow: row wrap;              /* es una propiedad abreviada que establece flex-direction y flex-wrap */
+
+  justify-content: center;          /* alinea los elementos en el eje X */
+  align-items: center;              /* alinea los elementos en el eje Y */
+
+  align-content: center;            /* se usa para cuando hay varias lineas de elementos utilizando el espacio adicional */ 
+}
+
+/* ====================================================================================================================== */
+
+/* Hijos Flex */
+
+p .flex-childs {
+  
+  order: 1;                 /* Especifica el orden del elemento en cuestion */
+  flex-grow: 4;             /* Especifica cuanto crece el elemento en relacion a los demas elementos (4 veces mas rapido por ejemplo) */
+  flex-shrink: 2;           /* Especifica cuanto decrece el elemento en realcion a los demas elementos (2 veces mas rapido por ejemplo) */
+  flex-basis: 50px;         /* Especifica la longitud inicial del elemento */
+  flex: 0 0 200px;          /* Es la propiedad abreviada para flex-grow, flex-shrink, flex-basis */
+  align-self: center;       /* Especifica la alineacion propia del elemento anulando el align items del contenedor */
+
+}

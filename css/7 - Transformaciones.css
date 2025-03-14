@@ -1,0 +1,37 @@
+
+/* TRANSFORMACIONES 2D */
+
+div {
+
+  transform: translate(50px, 100px);    /* translate() mueve el elemento desde su posicion de origen en los eje X , Y */
+  transform: rotate(20deg);             /* rotate() rota el elemento segun los grados, en negativo rota en contra del reloj */
+  transform: scale(2, 3);               /* scale() aumenta o disminuye el tamaño del elemento segun ancho y alto (2 veces el ancho, 3 veces el alto) */         
+  transform: scaleX(2);                 /* scaleX() aumenta o disminuye el tamaño del elemento segun el ancho */
+  transform: scaleY(2);                 /* scaleY() aumenta o disminuye el tamaño del elemento segun el alto */
+  transform: skew(20deg, 10deg);        /* skew() desvia el elemento en el eje X y el eje Y */
+  transform: skewX(20deg);              /* skewX() desvia el elemento en el eje X */
+  transform: skewY(20deg);              /* skewY() desvia el elemento en el eje Y */
+
+  transform: matrix(1, -0.3, 0, 1, 0, 0);   /* matrix() puede utilizar todas las propiedades anteriores en el siguiente orden: 
+  
+  matriz(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY()) */
+
+}
+
+/* ============================================================================================================================== */
+
+/* TRANSFORMACIONES 3D */
+
+#myDiv {
+
+  transform: rotateX(150deg);           /* rotateX() rota el elemento en el eje X */
+  transform: rotateX(150deg);           /* rotateY() rota el elemento en el eje Y */
+  transform: rotateZ(150deg);           /* rotateZ() rota el elemento en el eje Z */
+}
+
+
+
+div {
+  transform: rotate(45deg);
+  transform-origin: top 0px;            /* define donde empieza la transformacion */    
+}

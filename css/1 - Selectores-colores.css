@@ -1,0 +1,55 @@
+
+/* SELECTORES */
+
+h1 {
+    color: white;       /* edita todos los h1 */
+}
+
+p {
+    color: white;       /* edita todos los p */
+}
+
+h1, p {
+    color: black;       /* edita todos los h1 y p */
+}
+
+#titulo {
+    color: blue;        /* edita solo el elemento con ID "titulo" */
+}
+
+.parrafo {
+    color: aqua;        /* edita todos los elementos con class "parrafo" */
+}
+
+h1.barra {
+    color: red;         /* edita todos los h1 con class "barra" */
+}
+
+/* ------------------------------------------------------------------------------------------------- */
+
+/* COLORES */
+
+/* Valores Hexagecimales */     /* 0 ausencia - F maxima expresion */
+
+.hexagecimal {
+    color: #F4569D;    /* 6 valores (2 valores de rojo, 2 valores de verde y 2 valores de azul) */
+    color: #A8D;       /* 3 valores (1 valor de rojo, 1 valor de verde y 1 valor de azul) */
+}
+
+/* Valores RGB */           /* 0 ausencia - 255 Maxima expresion */
+
+.RGB {
+    color: rgb(203, 103, 103);   /* 3 valores (1 para rojo, 1 para verde, 1 para azul) */
+}
+
+.RGBA {
+    color: rgba(58, 228, 228, 0.31);   /* cuarto valor para transparencia ( valor de 0.0 a 1) */
+}
+
+/* Valores HSL */
+
+.HSL {                             /* 3 valores (1 valor para hue, 1 para saturacion, 1 para brillo) */
+    color: (120deg, 60%, 89%);     /* HUE = rojo -> 0deg, amarillo -> 60deg, verde -> 120deg, */
+}                                  /* cyan -> 180deg, magenta -> 300deg */
+
+/* ------------------------------------------------------------------------------------------------- */

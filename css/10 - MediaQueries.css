@@ -1,0 +1,29 @@
+
+/* MEDIA QUERIES */
+
+/* Estructura de un media query */
+
+@media (max-width: 768px) {                 /* en este caso la media query se cumple desde 0 hasta maximo 768px */              
+  
+  h1 {
+    background-color: red;                /* si sobrepasa los 768px la propiedad ya no se aplica */
+  }
+
+}
+
+@media (max-width: 1024px) {                /* en este caso la media query se cumple desde 769px hasta maximo 1024px */
+
+  h1 {
+    background-color: yellow;             /* se cumple desde 769px debido a la primera media query, */  
+  }                                         /* si sobrepasa los 1024px la propiedad ya no se aplica */
+  
+}
+
+@media (max-width: 1280px) {                /* en este caso la media query se cumple desde 1025px hasta maximo 1280px */
+  
+  h1 {
+    background-color: black;              /* se cumple desde 1025px debido a la primera media query, */  
+  }                                         /* si sobrepasa los 1280px la propiedad ya no se aplica */
+
+}
+

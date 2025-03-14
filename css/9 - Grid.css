@@ -1,0 +1,45 @@
+
+/* GRID */
+
+/* Container con Grid */
+
+.grid-container {
+
+  display: grid;                /* Colocamos grid en el contenedor padre */
+  
+  column-gap: 10px;             /* coloca una separacion entre las columnas */
+  row-gap: 10px;                /* coloca una separacion entre las filas */
+  gap: 10px;                    /* coloca una separacion tanto entre las columnas y las filas */
+
+  grid-template-columns: 1fr 100px ;    /* asi se colocan cuantas columnas se necesitan y se puede utilizar cualquier medida */
+  grid-template-rows: 30px 60% auto;    /* asi se colocan cuantas filas se necesitan y se puede utilizar cualquier medida */
+
+  justify-content: center;      /* alinea los elementos en el eje X */
+  align-content: center;        /* alinea los elementos en el eje Y */
+  
+  grid-template-areas: "elemento1 elemento1 elemento2"    /* indica cuantas columnas y filas separadas por areas */
+  /* hay 3 columnas */ "elemento1 elemento1 elemento2"    /* las columnas se dividen por espacios */
+  /* hay 3 filas */    "elemento3 elemento3 elemento3";   /* las filas se dividen por el conjunto de comillas */
+
+  
+}
+
+/* ======================================================================================================= */
+
+/* Elementos con Grid */
+
+.grid-childs {
+  
+  grid-column-start: 1;     /* indica en que linea de columna empieza el elemento */
+  grid-column-end: 3;       /* indica en que linea de columna termina el elemento */    
+  grid-column: 1 / 3;       /* indica en que linea de columna empieza y en cual termina */
+
+  grid-row-start: 1;        /* indica en que linea de fila empieza el elemento */
+  grid-row-end: 3;          /* indica en que linea de fila termina el elemento */
+  grid-row: 1 / 3;          /* indica en que linea de fila empieza y en cual termina */
+
+  /* IMAGEN DE LAS LINEAS GRID ==> */  background-image: url(https://www.w3schools.com/css/grid_lines.png);
+
+  grid-area: elemento1;     /* indica al elemento en cuestion que area va a ocupar (areas definidas con grid-template-areas */ 
+
+}

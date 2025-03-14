@@ -1,0 +1,39 @@
+
+/* TRANSICIONES */
+
+div {
+    width: 100px;            /* Tiene por defecto 100px */
+    height: 100px;
+    background: red;
+    transition: width 2s;    /* ponemos la propiedad que va a utilizar la transicion y su duracion */
+    transition-delay: 1s;    /* especifica el delay de cuanto se demora en iniciar la transicion */
+
+    transition-timing-function: linear;  /* especifica la curva de velocidad de la transicion */
+    /* valores: 
+
+        ease;           => inicio lento, luego rapido y finaliza lento (predeterminado)
+        linear;         => tiene la misma velocidad siempre
+        ease-in;        => inicio lento
+        ease-out;       => final lento
+        ease-in-out;    => inicio y final lento
+    */
+}
+
+div:hover {
+    width: 300px;           /* con la transicion cambiara a 300px */
+}
+
+/* ================= */
+
+/* Forma abreviada */
+
+div {
+    transition-property: width;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-delay: 1s;
+}
+
+div {
+    transition: width 2s linear 1s;
+}

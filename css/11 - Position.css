@@ -1,0 +1,25 @@
+
+/* POSITION */
+
+
+#static {
+
+    position: static;           /* tiene la posicion que tiene por defecto */
+
+    position: relative;         /* en relacion con la posicion original del elemento se puede mover */    
+    top: 10px;                  /* empuja desde la parte de arriba del elemento 10 px */
+    left: 10px;                 /* empuja desde la parte izquierda del elemento 10 px */
+
+    position: absolute;         /* pierde su posicion original y se puede mover el elemento en relacion al viewport */
+    top: 10px;                  /* o si un contenedor padre tiene posicion relativa, el elemento se mueve en relacion */
+    left: 10px;                 /* a ese contenedor */ 
+                                   
+    position: fixed;            /* al hacer scroll el elemento no se correra y quedara fijo en el viewport con el */
+    top: 10px;                  /* posicionamiento que le demos */
+    left: 10px;
+
+    position: sticky;           /* al hacer scroll el elemento se correra normalmente pero justo cuando se vaya a perder */
+    top: 10px;                  /* queda fijo */
+    left: 10px;                    
+
+}                               
