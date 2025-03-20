@@ -1,0 +1,100 @@
+<!-- Se usa el simbolo "!" para generar una estructura basica de HTML -->
+
+<!DOCTYPE html> <!-- Se usa para indicar que el documento es de tipo HTML5 -->
+
+<html lang="en"> <!-- Se usa para indicar el idioma del documento -->
+
+<head> <!-- Se usa para definir los metadatos del documento y otras caracteristicas no visuales -->
+
+    <meta charset="UTF-8"> <!-- Se usa para indicar la codificación de caracteres del documento -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Se usa para hacer que el sitio sea responsivo -->
+    <title>Document</title> <!-- Se usa para definir el título del documento -->
+</head>
+
+<body> <!-- Se usa para definir el contenido del documento -->
+
+    <h1>Hello World!</h1> <!-- Se usa para crear un Titulo de nivel 1 (Mas importante) -->
+    <h2>Hello World!</h2> <!-- Se usa para crear un Titulo de nivel 2 (Menos importante) -->
+    <h3>Hello World!</h3> <!-- Se usa para crear un Titulo de nivel 3 (Menos importante) -->
+    <h4>Hello World!</h4> <!-- Se usa para crear un Titulo de nivel 4 (Menos importante) -->
+    <h5>Hello World!</h5> <!-- Se usa para crear un Titulo de nivel 5 (Menos importante) -->
+    <h6>Hello World!</h6> <!-- Se usa para crear un Titulo de nivel 6 (Menos importante) -->
+
+    <br> <!-- Se usa para crear un salto de línea -->
+
+    <p>Hello World!</p> <!-- Se usa para crear un párrafo -->
+
+    <p>Texto generico y esto es <strong>texto importante y en negrita</strong> y <em>texto en cursiva</em>.</p>
+    <!-- Se usa para crear un párrafo con texto en negrita(strong) y cursiva(em) -->
+
+    <a href="https://www.example.com">Link</a> <!-- Se usa para crear un enlace -->
+    <!-- href indica la URL del enlace -->
+
+    <img src="https://via.placeholder.com/150" alt="Imagen de ejemplo"> <!-- Se usa para insertar una imagen -->
+    <!-- src indica la URL de la imagen y alt indica la descripción de la imagen -->
+
+    <ul> <!-- Se usa para crear una lista desordenada -->
+        <li>Elemento de lista</li>
+        <li>Otro elemento de lista</li>
+    </ul>
+
+    <ol> <!-- Se usa para crear una lista ordenada -->
+        <li>Primer elemento</li>
+        <li>Segundo elemento</li>
+    </ol>
+
+    <table border="1"> <!-- Se usa para crear una tabla -->
+
+        <tr> <!-- Se usa para crear una fila de la tabla -->
+
+            <th>Encabezado 1</th> <!-- Se usa para crear un encabezado de la tabla -->
+            <th>Encabezado 2</th>
+
+        </tr>
+        <tr>
+            <td>Celda 1</td> <!-- Se usa para crear una celda de la tabla -->
+            <td>Celda 2</td>
+        </tr>
+
+    </table>
+
+    <form action="" method="post"> <!-- Se usa para crear un formulario -->
+        <!-- action indica la URL donde se enviarán los datos del formulario y method indica el método de envío -->
+
+        <label for="nombre">Nombre:</label> <!-- Se usa para crear una etiqueta para un campo de entrada -->
+        <!-- for indica el ID del input a relacionar -->
+        <input type="text" id="nombre" name="nombre" placeholder="escribe tu nombre"> <!-- Se usa para crear un input de tipo texto -->
+        <!-- type indica el tipo de input, id indica el ID del input y name indica el titulo que tendra el valor del input al enviar el formulario -->
+        <!-- placeholder indica una guia mientras no haya valor -->
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" value="ejemplo@ejemplo.com"> <!-- Se usa para crear un input de tipo email -->
+        <!-- value indica un valor inicial de un input -->
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje"></textarea> <!-- Se usa para crear un area de texto (comentario)-->
+
+        <label for="opciones">Opciones:</label>
+        <select id="opciones" name="opciones"> <!-- Se usa para crear una lista desplegable -->
+            <option value="opcion1">Opción 1</option> <!-- Se usa para crear una opción de la lista desplegable -->
+            <option value="opcion2">Opción 2</option>
+        </select>
+
+        <label for="">Input inhabilitado:</label>
+        <input type="text" id="" name="" disabled> <!-- disabled => Se usa para crear un input deshabilitado -->
+
+        <label for="casillas">Opciones:</label>
+        <input type="checkbox" id="casillas" name="casillas"> <!-- Se usa para crear un checkbox -->
+
+        <label for="radio">Opciones:</label>
+        <input type="radio" id="radio" name="radio"> <!-- Se usa para crear un radio button -->
+        
+        <button type="submit">Enviar</button> <!-- Se usa para crear un botón -->
+        <!-- submit indica que el botón enviará el formulario -->
+        <button type="reset">Reset</button> <!-- Reset indica que el botón reseteará el formulario -->
+
+    </form>
+</body>
+
+</html>
