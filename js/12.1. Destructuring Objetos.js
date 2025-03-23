@@ -17,7 +17,7 @@ const producto = {
 // Forma con destructuring
 
 const { precio, nombre } = producto; // <-- Objeto al que se le aplica destructuring
-//        ^          ^
+//        ^        ^
 //Se extrae la propiedad precio y nombre del objeto producto
 
 // NOTA: El nombre de variable sera el mismo que la propiedad del objeto
