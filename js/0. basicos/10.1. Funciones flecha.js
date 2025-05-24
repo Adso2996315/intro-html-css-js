@@ -13,6 +13,8 @@ const saludar = (nombre) => {
   console.log("Hola " + nombre);
 };
 
+saludar("pepito");
+
 //Las funciones flecha pueden tener un return implícito
 
 // Declaración de función regular
@@ -27,3 +29,17 @@ const sumarFlecha2 = (a, b) => {
 
 // Función flecha con return implícito (siempre y cuando el return sea de una sola linea)
 const sumarFlecha3 = (a, b) => a + b;
+
+
+cuentaAhorros = 1000;
+
+function verSaldo() {
+  return cuentaAhorros;
+}
+
+const verSaldo2 = () => {
+  return cuentaAhorros;
+} 
+
+const verSaldo3 = () => cuentaAhorros;
+

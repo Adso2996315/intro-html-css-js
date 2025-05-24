@@ -42,3 +42,32 @@ function sumar(a, b) {
 const resultado = sumar(1, 2);
 // o ver en consola directamente el resultado
 console.log(sumar(1, 2)) // -> 3
+
+//==========================================================================================================
+// Funciones puras e impuras
+
+// Una función pura es aquella que, dado el mismo conjunto de entradas (inputs), siempre devuelve el mismo resultado (output) y no tiene efectos
+// secundarios (side effects). Por ejemplo, una función pura no modifica variables externas ni depende de ellas.
+
+function funcionPura(a, b) {
+    return a + b; // Siempre devuelve el mismo resultado para los mismos valores de a y b
+}
+
+console.log(funcionPura(2, 3)); // -> 5
+console.log(funcionPura(2, 3)); // -> 5 (siempre el mismo resultado)
+
+// Una función impura, por el contrario, puede devolver resultados diferentes para los mismos inputs o tener efectos secundarios, 
+// como modificar variables externas o depender de ellas.
+
+let numero = 10;
+
+function funcionImpura(a) {
+    numero += a; // Modifica una variable externa (efecto secundario)
+    return numero;
+}
+
+console.log(funcionImpura(5)); // -> 15
+console.log(funcionImpura(5)); // -> 20 (resultado diferente para el mismo input)
+
+// Las funciones puras son más predecibles y fáciles de probar, mientras que las impuras pueden ser útiles en ciertos casos 
+// pero requieren más cuidado.

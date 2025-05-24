@@ -36,7 +36,7 @@ while (cuentaAtras > 0) {
   // mostramos el valor de la cuenta atrás en cada iteración
   console.log(cuentaAtras);
   // restamos 1 a la cuenta atrás
-  cuentaAtras = cuentaAtras - 1;
+  cuentaAtras--;
 }
 console.log("¡Despegue! 🚀");
 
@@ -45,7 +45,7 @@ let cuentaAtras2 = 10;
 
 while (cuentaAtras2 > 0) {
   console.log(cuentaAtras2);
-  cuentaAtras2 = cuentaAtras2 - 1;
+  cuentaAtras2--;
 
   // si la cuenta atrás es 5, salimos del bucle
   if (cuentaAtras === 5) {
@@ -67,3 +67,4 @@ do {
   console.log(i);
   i++;
 } while (i < 10);
+

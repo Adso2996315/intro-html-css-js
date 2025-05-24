@@ -57,7 +57,7 @@ if (edad >= 18) {
   console.log('No puedes conducir')
 }
 
-// Operado ternario ==========================================================================================================
+// Operador ternario ==========================================================================================================
 
 // El operador ternario es una forma de escribir condicionales que se puede usar en una sola línea.
 

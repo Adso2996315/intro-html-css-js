@@ -27,7 +27,7 @@ let puntaje = 10;
 puntaje++           // aqui a puntaje se le suma 1 y asi con todos los operadores aritmeticos
 
 puntaje += 10;     // aqui se suma puntaje + 10 y asi con todos los operadores aritmeticos
-console.log(puntaje);
+console.log(puntaje); // 20
 
 // En javascript las operaciones siguen un orden de precedencia como en matematicas
 
@@ -45,8 +45,8 @@ resultado = ( 600 + 600 ) * 1.05;   // lo que esta en parentesis se calcula prim
 90 === "90"  // false  --  igualdad estricta ==> compara tambien el tipo
 90 == "90"  // true  --  igualdad simple ==> compara solo el valor
 
-90 !== 90   // false  --  diferencia estricta ==> compara tambien el tipo
-90 != "90"  // true  --  diferencia simple ==> compara solo el valor
+90 !== "90"   // true  --  diferencia estricta ==> compara tambien el tipo
+90 != "90"  // false  --  diferencia simple ==> compara solo el valor
 
 // Comparacion de STRINGS
 
@@ -58,7 +58,7 @@ resultado = ( 600 + 600 ) * 1.05;   // lo que esta en parentesis se calcula prim
 // Comparacion de Booleans
 true === true // true
 true === false // false
-false !== false
+false !== false // false
 
 
 // OPERADORES LOGICOS =======================================================================================================
@@ -87,3 +87,4 @@ typeof undefined // undefined
 typeof null // object ==> se considera un bug del lenguaje
 typeof [] // object
 typeof {} // object
+

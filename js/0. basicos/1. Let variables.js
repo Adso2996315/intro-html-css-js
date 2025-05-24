@@ -14,3 +14,5 @@ let nombre_producto = 'Monitor HD'; // underscore
 let nombreProducto = 'Monitor HD'; // camelCase
 let NombreProducto = 'Monitor HD'; // PascalCase
 let nombreproducto = 'MonitorHD'; 
+
+console.log(nombreVariable2);
